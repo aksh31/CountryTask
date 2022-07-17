@@ -1,0 +1,40 @@
+<!-- <div class="col-sm-3">
+    <div class="card">
+        <div class="card-body">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" class="img-fluid" alt="india">
+                <figcaption class="text-center my-3">
+                    <h5>Mera Bharat Mahan</h5>
+                </figcaption>
+            </figure>
+            <p><strong>Capital : </strong> New Delhi</p>
+            <p><strong>Languages : </strong> Hindi, English, Marathi</p>
+            <p><strong>Population : </strong> 1380004385</p>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div class="card mb-4 myCard">
+    <div class="card-body">
+        <figure>
+            <img src={{country.flag}} class="img-fluid img" alt="">
+            <figcaption>
+                <h5 class="text-center my-3">{{country.name}}</h5>
+                <p><strong>Capital : </strong> {{country.capital}}</p>
+                <p><strong>Languages : </strong> {{country.languages}} </p>
+                <!-- <div class="row">
+                    <div class="col-sm-6">
+                        <strong>Languages : </strong>
+                    </div>
+                    <div class="col-sm-6">
+                        {{country.languages}}
+                    </div>
+                </div> -->
+                <p><strong>Population : </strong> {{country.population | number}}</p>
+            </figcaption>
+        </figure>
+
+    </div>
+</div>
